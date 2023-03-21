@@ -1,0 +1,99 @@
+body {
+  /* set background and text color */
+  margin: 0;
+  background-color: #333;
+  color: white;
+
+  /* center all the content */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* set fonts */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+  /* set background and text color */
+  background-color: #006699;
+  padding: 3rem;
+  border-radius: 1rem;
+  border: 2px solid black;
+
+  /* center all content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  /* create two seperate columns */
+  display: grid;
+  grid-template-columns: auto auto;
+
+  /* add gap for spacing between elements */
+  row-gap: 1rem;
+  column-gap: 3rem;
+
+  /* center content */
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+.characterAmountContainer {
+  /* center the range and number input inside div */
+  display: flex;
+  align-items: center;
+}
+
+.numberInput {
+  width: 2rem;
+}
+
+.passwordDisplay {
+  background-color: white;
+  color: black;
+  padding: 0.5rem;
+  border: 1px solid #333;
+  border-radius: 1rem;
+
+  /* this allows for the password to be two rows long */
+  height: 2rem;
+  width: 450px;
+
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* if password entends beyond the box, the password will break onto the line below */
+  word-break: break-all;
+}
+
+.btn {
+  /* make button two columns wide */
+  grid-column: span 2;
+
+  background-color: transparent;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ffffff33;
+}
